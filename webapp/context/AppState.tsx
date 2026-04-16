@@ -41,7 +41,7 @@ export function AppStateProvider({ children }: { children: React.ReactNode }){
     setRaw(r => {
       if (qty > r) return r
       setFinished(f => f + qty)
-      pushTxn({ type: 'Production', amount: 0, ts: Date.now() })
+      pushTxn({ type: 'Production', amount: qty, ts: Date.now() })
       return r - qty
     })
   }
