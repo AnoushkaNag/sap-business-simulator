@@ -45,7 +45,7 @@ export default function Home() {
               <h3 className="text-lg font-semibold mb-4">Quick Actions</h3>
               <div className="flex gap-3">
                 <ActionButton onClick={() => { purchase(10) }} successMessage="Purchase created" className="bg-gray-800">Create Purchase Order (+10)</ActionButton>
-                <ActionButton onClick={() => { produce(5) }} successMessage="Production run started" className="bg-gray-800">Run Production (-5 raw -> +5 finished)</ActionButton>
+                <ActionButton onClick={() => { produce(5) }} successMessage="Production run started" className="bg-gray-800">Run Production (-5 raw {'->'} +5 finished)
                 <ActionButton onClick={() => { sell(3) }} successMessage="Sales order created" className="bg-gray-800">Create Sales Order (-3 finished)</ActionButton>
               </div>
             </div>
